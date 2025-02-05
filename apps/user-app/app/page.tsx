@@ -5,7 +5,7 @@ import { Appbar } from "@repo/ui/appbar";
 export default function Page() {
   const session = useSession();
   return (
-   <div className="w-screen h-screen">
+   <div>
       <Appbar onSignin={signIn} onSignout={signOut} user={session.data?.user} />
    </div>
   );
